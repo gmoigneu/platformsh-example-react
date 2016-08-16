@@ -6,8 +6,6 @@ name: jssass
 
 # The type of the application to build.
 type: nodejs:6.2
-build:
-  flavor: symfony
 
 # The relationships of the application with services or other applications.
 # The left-hand side is the name of the relationship as it will be exposed
@@ -35,6 +33,6 @@ disk: 2048
 # The hooks that will be performed when the package is deployed.
 hooks:
     build: |
-      npm install
-      npm test
+#      npm install
+#      npm test
     deploy: |
