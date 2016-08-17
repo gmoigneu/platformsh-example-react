@@ -33,6 +33,5 @@ disk: 2048
 # The hooks that will be performed when the package is deployed.
 hooks:
     build: |
-#      npm install
-#      npm test
+      BABEL_DISABLE_CACHE=1 npm test
     deploy: |
