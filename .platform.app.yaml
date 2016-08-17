@@ -23,9 +23,9 @@ web:
     locations:
       "/":
         # The public directory of the app, relative to its root.
-        root: "web"
+        root: ""
         # The front-controller script to send non-static requests to.
-        passthru: "/index.html"
+        passthru: false
 
 # The size of the persistent disk of the application (in MB).
 disk: 2048
