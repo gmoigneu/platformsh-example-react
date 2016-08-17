@@ -20,7 +20,6 @@ class Header extends React.Component {
           <IndexLink to="/" activeClassName="active">Blog</IndexLink>
           {" - "}
           <Link to="/about" activeClassName="active">About</Link>
-          {" - "}
           </nav>
       </header>
     );
