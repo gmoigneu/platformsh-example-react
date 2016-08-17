@@ -9,7 +9,7 @@ import configureStore from './store/configureStore';
 import { Provider } from 'react-redux';
 import { Router, browserHistory } from 'react-router';
 import routes from './routes';
-import './styles/styles.css';
+import './styles/styles.scss';
 import {loadPosts} from './actions/blogActions';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
