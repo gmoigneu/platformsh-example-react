@@ -18,14 +18,14 @@ dependencies:
 
 # The configuration of app when it is exposed to the web.
 web:
-    #commands:
-        #start: "BABEL_DISABLE_CACHE=1 npm start"
+    commands:
+        start: "BABEL_DISABLE_CACHE=1 npm start"
     locations:
-      "/":
-        # The public directory of the app, relative to its root.
-        root: ""
-        # The front-controller script to send non-static requests to.
-        passthru: false
+        "/public":
+            passthru: false
+            root: public
+            allow: true
+            expires: 3d
 
 # The size of the persistent disk of the application (in MB).
 disk: 2048
